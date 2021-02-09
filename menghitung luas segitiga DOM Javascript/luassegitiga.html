@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Luas Segitiga</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	
+	<style>
+		body{
+		  background-image:url(378866.gif);
+		  background-size:cover;
+		  background-attachment: fixed;
+		  color: #fff;
+	   
+		  background-position: center;
+		}
+		</style>
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <style type="text/css">
+    	.preloader-single{
+			background: #fff;
+		    width: 100%;
+		    height: 350px;
+		    padding: 20px;
+		}
+		.preloader {
+		    position: fixed;
+		    width: 100%;
+		    height: 100%;
+		    z-index: 9999;
+		 
+		}
+		.preloader .loading {
+		    position: absolute;
+		    left: 50%;
+		    top: 50%;
+		    transform: translate(-50%,-50%);
+		    font: 14px arial;
+		}
+		.preloader .loading p {
+		    font-size: 16px;
+		    font-weight: bold;
+        }
+        </style>
+        <script>
+  		$(document).ready(function(){
+  			$(".preloader").fadeOut();
+              
+          })
+        </script>
+</head>
+<body>
+	<div class="preloader" id="preloader">
+        <div class="loading">
+            <img src="profile.gif" width="80">
+            <p>Processing...</p>
+        </div>
+    </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+<div align="center">
+	<table>
+		<thead>
+			<tr>
+				<th><h2 style="background-color:black;">Luas Segitiga</h2></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><br><h4 style="background-color:black;">Masukan Alas!</h4></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="alas" class="form-control"></td>
+			</tr>
+			<tr>
+				<td><br><h4 style="background-color:black;">Masukan Tinggi!</h4></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="tinggi" class="form-control"></td>
+			</tr>
+			
+			<tr>
+				
+				<td><br>
+					<div align="center">
+					<button class="btn btn-info" onclick="hitung()"><h5>Hitung</h5></button>
+				</div>
+			</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td><br><br><h4 style="background-color:black;">Luas Segitiga:</h4></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="luas" class="form-control" disabled></td>
+			</tr>
+		</tfoot>
+	</table>
+</div>
+<script type="text/javascript" src="js/luassegitiga.js"></script>
+</body>
+</html>
